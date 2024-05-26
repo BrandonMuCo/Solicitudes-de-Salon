@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Salón de Baile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div class="frame" id="sign-in">
+            <h1>Solicitud de Salón</h1>
+            <input type="text" id="group-name" placeholder="Nombre del Grupo">
+            <button id="start-request" disabled>Comenzar Solicitud</button>
+        </div>
+
+        <div class="frame" id="request-form" style="display: none;">
+            <h1>Solicitud de Salón</h1>
+            <input type="date" id="date">
+            <input type="time" id="time">
+            <textarea id="comments" placeholder="Comentario"></textarea>
+            <button id="submit-request" disabled>Enviar Solicitud</button>
+        </div>
+
+        <div class="frame" id="confirmation" style="display: none;">
+            <h1>Solicitud Enviada</h1>
+            <p>Solicitud enviada con éxito, no olvides mirar las notificaciones.</p>
+            <button id="go-back">Volver al Inicio</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
